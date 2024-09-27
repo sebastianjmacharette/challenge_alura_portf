@@ -25,18 +25,16 @@ a {
 }
 
 /* ------------------------------ Sección Menú -------------------------------*/
+/* Estilos generales para la cabecera */
 .cabecera {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     padding: 1rem;
     background-color: var(--color-de-fondo-menu);
 }
 
-.cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
-}
-
+/* Título de la cabecera */
 .cabecera__titulo {
     font-size: 1.2rem;
     text-align: left;
@@ -44,14 +42,52 @@ a {
     margin-bottom: 40px;
 }
 
+/* Botón menú hamburguesa (visible solo en pantallas pequeñas) */
+.cabecera__menu-boton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Oculto por defecto en pantallas grandes */
+}
+
+/* Lista de navegación oculta inicialmente */
 .navegacion__lista {
     display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navegacion__elemento a {
     font-size: 0.9rem;
     color: white;
+    text-decoration: none;
+    padding: 1rem 0;
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .cabecera {
+        align-items: flex-start;
+    }
+
+    .cabecera__menu-boton {
+        display: block; /* Botón visible solo en pantallas pequeñas */
+    }
+
+    .navegacion__lista.mostrar {
+        display: flex; /* Mostrar el menú cuando se activa */
+    }
+
+    .navegacion__elemento a {
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+}
+
 /* ------------------------------ Sección Presentación ------------------------------*/
 .presentacion {
     display: flex;
@@ -63,11 +99,21 @@ a {
 
 .presentacion__foto {
     border-radius: 100%;
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
-    margin-right: 2rem; /* Mueve la imagen más hacia la izquierda */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
 }
+.presentacion__subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: right; /* Alinea el texto a la derecha */
+    color: rgb(101, 101, 101);
 
+}
+.presentacion__subtitulo__span{
+    color: rgb(101, 101, 101);
+    font-size: 40px;
+}
 .presentacion__contenedor {
     width: 70%; /* El contenedor de texto ocupa el 70% del ancho de la pantalla */
 }
@@ -86,14 +132,69 @@ a {
 
     .presentacion__foto {
         margin-bottom: 1rem;
-        margin-right: 0; /* Elimina el margen derecho de la imagen en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    }
+}
+.redes {
+     
+
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos en pantallas grandes */
+    list-style: none;
+    padding: 0;
+    margin: 25px;
+}
+.redes__span{
+    color: #0c64b5;
+}
+.redes__img {
+    margin: 0 1rem;
+    font-weight: bold;
+     
+
+}
+
+/* Responsividad para pantallas pequeñas */
+ @media (max-width: 768px) {
+    .redes {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center;    /* Centra los elementos */
+    }
+
+    .presentacion__subtitulo__span {
+        text-align: center; /* Centra el texto */
+        display: block;     /* Asegura que el span se comporte como un bloque completo para alinearse */
+        width: 100%;        /* Opcional: para asegurar que ocupe todo el ancho */
+    }
+
+    .redes__span {
+        color: #0c64b5;
+        font-size: 30px;
+    }
+
+    .redes__img {
+        margin-bottom: 1rem;
     }
 }
 
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    background-color: #0c64b5;
 
-
+}
+.sobre-mi__titulo{
+    color: white;
+    padding-top: 30px;
+padding-left: 50px;
+font-size: 2.5rem;
+}
+.sobre-mi__texto{
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
 
