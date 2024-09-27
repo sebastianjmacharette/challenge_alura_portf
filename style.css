@@ -1,0 +1,149 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #cecece;
+    --color-de-fondo-menu: #0c64b5;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    color: white;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.presentacion__foto {
+    border-radius: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 2rem; /* Mueve la imagen más hacia la izquierda */
+}
+
+.presentacion__contenedor {
+    width: 70%; /* El contenedor de texto ocupa el 70% del ancho de la pantalla */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion__contenedor {
+        width: 100%; /* El texto ocupa el 100% en pantallas pequeñas */
+        margin-right: 0;
+    }
+
+    .presentacion__foto {
+        margin-bottom: 1rem;
+        margin-right: 0; /* Elimina el margen derecho de la imagen en pantallas pequeñas */
+    }
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
