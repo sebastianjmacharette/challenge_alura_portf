@@ -18,25 +18,37 @@
   <body>
     <!-- Menú -->
     <header class="cabecera">
-      <h1 class="cabecera__titulo">Sebastian Macharette</h1>
-      <button class="cabecera__menu-boton" aria-label="Abrir menú">☰</button>
-      <!-- Botón hamburguesa -->
+      <div class="cabecera__titulo-contenedor">
+        <!-- Contenedor para título y botón -->
+        <h1 class="cabecera__titulo">Sebastian Macharette</h1>
+        <button class="cabecera__menu-boton" aria-label="Abrir menú">☰</button>
+      </div>
       <nav class="navegacion">
         <ul class="navegacion__lista">
-          <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
           <li class="navegacion__elemento">
-            <a href="#habilidades">Habilidades</a>
+            <a href="#sobre-mi"><span class="habilidades-span">Sobre mi</span></a>
           </li>
           <li class="navegacion__elemento">
-            <a href="#aficiones">Aficiones</a>
+            <a href="#habilidades"
+              ><span class="habilidades-span">Habilidades</span></a
+            >
           </li>
           <li class="navegacion__elemento">
-            <a href="#formacion">Formación</a>
+            <a href="#aficiones"
+              ><span class="habilidades-span">Aficiones</span></a
+            >
           </li>
           <li class="navegacion__elemento">
-            <a href="#proyectos">Proyectos</a>
+            <a href="#formacion"
+              ><span class="habilidades-span">Formación</span></a
+            >
           </li>
-          <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+          
+          <li class="navegacion__elemento">
+            <a href="#contacto"
+              ><span class="habilidades-span">Contacto</span></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -64,25 +76,25 @@
         </p>
         <ul class="redes">
           <li class="redes__img">
-            <a href=""
+            <a target="_blank" href="https://github.com/sebastianjmacharette"
               ><span class="redes__span">Github</span>
               <img src="assets/arrow.png" alt="Flecha"
             /></a>
           </li>
           <li class="redes__img">
-            <a href=""
+            <a target="_blank" href="https://www.linkedin.com/in/seba-macha/"
               ><span class="redes__span">Linkedin</span>
               <img src="assets/arrow.png" alt="Flecha"
             /></a>
           </li>
           <li class="redes__img">
-            <a href=""
+            <a target="_blank" href="https://www.instagram.com/sebastianmacharette1984/"
               ><span class="redes__span">Instagram</span>
               <img src="assets/arrow.png" alt="Flecha"
             /></a>
           </li>
           <li class="redes__img">
-            <a href=""
+            <a target="_blank" href="https://www.dropbox.com/scl/fi/4w3txwratqqjjave4s45r/cv2024.pdf?rlkey=sbl52azxs13lvwijmbpl11ee3&st=h5bzkwk5&dl=0"
               ><span class="redes__span">Currículo</span>
               <img src="assets/arrow.png" alt="Flecha"
             /></a>
@@ -97,12 +109,11 @@
       <p class="sobre-mi__texto">
         Mi viaje al mundo de la programación comenzó a la tierna edad de 11
         años, mientras exploraba las vastas posibilidades de mi primera
-        computadora con Windows 95. 
+        computadora con Windows 95.
       </p>
       <p class="sobre-mi__texto">
-        Desde ese momento transformador, mi
-        trayectoria ha sido moldeada por spanuna pasión inquebrantable por la
-        tecnología y su potencial ilimitado
+        Desde ese momento transformador, mi trayectoria ha sido moldeada por
+        spanuna pasión inquebrantable por la tecnología y su potencial ilimitado
       </p>
       <!-- Firma opcional -->
       <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma" />
@@ -113,7 +124,7 @@
       <h2 class="habilidades__titulo">Habilidades</h2>
       <ul class="habilidades__lista">
         <li class="habilidades__elemento">
-          <img class="habilidades__icono" src="assets/html.png" alt="HTML" />
+          <img class="habilidades__icono" src="assets/htlm.png" alt="HTML" />
           <p class="habilidades__nombre">HTML 5</p>
         </li>
         <li class="habilidades__elemento">
@@ -124,10 +135,7 @@
           />
           <p class="habilidades__nombre">JavaScript</p>
         </li>
-        <li class="habilidades__elemento">
-          <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP" />
-          <p class="habilidades__nombre">PHP</p>
-        </li>
+
         <li class="habilidades__elemento">
           <img
             class="habilidades__icono"
@@ -156,52 +164,97 @@
       <h2 class="aficiones__titulo">Aficiones</h2>
       <ul class="aficiones__lista">
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/skate_icon.png"
-            alt="Patinaje"
-          />
-          <p class="aficiones__nombre">Patinaje</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+          >
+            < https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons,
+            Inc.
+            <path
+              d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z"
+            />
+          </svg>
+          <p class="aficiones__nombre">Informática</p>
         </li>
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/guitar_icon.png"
-            alt="Tocar bajo"
-          />
-          <p class="aficiones__nombre">Tocar bajo</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
+            <path
+              d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"
+            />
+          </svg>
+          <p class="aficiones__nombre">Peliculas</p>
         </li>
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/headphones_icon.png"
-            alt="Oír música"
-          />
-          <p class="aficiones__nombre">Oír música</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            < https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons,
+            Inc.
+            <path
+              d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"
+            />
+          </svg>
+
+          <p class="aficiones__nombre">Viajes y naturaleza</p>
         </li>
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/tv_icon.png"
-            alt="Ver series"
-          />
-          <p class="aficiones__nombre">Ver series</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            < https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons,
+            Inc.
+            <path
+              d="M357.7 8.5c-12.3-11.3-31.2-11.3-43.4 0l-208 192c-9.4 8.6-12.7 22-8.5 34c87.1 25.3 155.6 94.2 180.3 181.6L464 416c26.5 0 48-21.5 48-48l0-112 32 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8.1-35.2l-208-192zM288 208c0-8.8 7.2-16 16-16l64 0c8.8 0 16 7.2 16 16l0 64c0 8.8-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16l0-64zM24 256c-13.3 0-24 10.7-24 24s10.7 24 24 24c101.6 0 184 82.4 184 184c0 13.3 10.7 24 24 24s24-10.7 24-24c0-128.1-103.9-232-232-232zm8 256a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM0 376c0 13.3 10.7 24 24 24c48.6 0 88 39.4 88 88c0 13.3 10.7 24 24 24s24-10.7 24-24c0-75.1-60.9-136-136-136c-13.3 0-24 10.7-24 24z"
+            />
+          </svg>
+
+          <p class="aficiones__nombre">Tecnología</p>
         </li>
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/forkspoon_icon.png"
-            alt="Cocinar"
-          />
-          <p class="aficiones__nombre">Cocinar</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            < https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons,
+            Inc.
+            <path
+              d="M309.6 158.5L332.7 19.8C334.6 8.4 344.5 0 356.1 0c7.5 0 14.5 3.5 19 9.5L392 32l52.1 0c12.7 0 24.9 5.1 33.9 14.1L496 64l56 0c13.3 0 24 10.7 24 24l0 24c0 44.2-35.8 80-80 80l-32 0-16 0-21.3 0-5.1 30.5-112-64zM416 256.1L416 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-115.2c-24 12.3-51.2 19.2-80 19.2s-56-6.9-80-19.2L160 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-230.2c-28.8-10.9-51.4-35.3-59.2-66.5L1 167.8c-4.3-17.1 6.1-34.5 23.3-38.8s34.5 6.1 38.8 23.3l3.9 15.5C70.5 182 83.3 192 98 192l30 0 16 0 159.8 0L416 256.1zM464 80a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"
+            />
+          </svg>
+
+          <p class="aficiones__nombre">Perros</p>
         </li>
         <li class="aficiones__elemento">
-          <img
+          <svg
             class="aficiones__icono"
-            src="assets/camera_icon.png"
-            alt="Tomar fotos"
-          />
-          <p class="aficiones__nombre">Tomar fotos</p>
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            < https://fontawesome.com License -
+            https://fontawesome.com/license/free Copyright 2024 Fonticons,
+            Inc.
+            <path
+              d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+            />
+          </svg>
+
+          <p class="aficiones__nombre">Libros</p>
         </li>
       </ul>
     </section>
@@ -211,10 +264,14 @@
       <h2 class="formacion__titulo">Formación académica</h2>
       <ul class="formacion__lista">
         <li class="formacion__elemento">
-          <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR" />
+          <img
+            class="formacion__icono_ciudad"
+            src="assets/ufpr_logo.png"
+            alt="UFPR"
+          />
           <div>
-            <h3 class="formacion__nombre">Análisis de datos</h3>
-            <p class="formacion__detalle">2018 - UFPR</p>
+            <h3 class="formacion__nombre">Diseño UX/UI</h3>
+            <p class="formacion__detalle">2023 - Bueno Aires Ciudad</p>
           </div>
         </li>
         <li class="formacion__elemento">
@@ -224,56 +281,53 @@
             alt="Alura"
           />
           <div>
-            <h3 class="formacion__nombre">Formación en UX Design</h3>
-            <p class="formacion__detalle">2019 - Alura</p>
+            <h3 class="formacion__nombre">Especialización Front-end</h3>
+            <p class="formacion__detalle">2024 - Alura</p>
           </div>
         </li>
         <li class="formacion__elemento">
-          <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ" />
+          <img
+            class="formacion__icono_telefonica"
+            src="assets/ufrj_logo.png"
+            alt="UFRJ"
+          />
           <div>
-            <h3 class="formacion__nombre">Posgrado en diseño</h3>
-            <p class="formacion__detalle">En curso - UFRJ</p>
+            <h3 class="formacion__nombre">Programacion en JavaScript</h3>
+            <p class="formacion__detalle">2023 - Conecta Empleo</p>
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section class="proyectos" id="proyectos">
-      <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-      <div class="proyectos__contenedor">
-        <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-        <p class="proyectos__descripcion">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-          quisquam unde repudiandae fugiat, earum temporibus!
-        </p>
-      </div>
-      <div class="proyectos__contenedor">
-        <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-        <p class="proyectos__descripcion">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-          quisquam unde repudiandae fugiat, earum temporibus!
-        </p>
-      </div>
-    </section>
+   
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
       <h2 class="contacto__titulo">Contacto</h2>
-      <form class="contacto__formulario">
-        <input class="contacto__campo" type="text" placeholder="Nombre" />
-        <input
-          class="contacto__campo"
-          type="email"
-          placeholder="Correo Electrónico"
-        />
-        <textarea
-          class="contacto__campo contacto__campo--textarea"
-          placeholder="Mensaje"
-        ></textarea>
-        <button class="contacto__boton" type="submit">Enviar</button>
+      <form action="https://formsubmit.co/sebastian.j.macharette@gmail.com" method="POST" id="contactForm">
+        <input type="text" name="name" placeholder="Tu nombre" required class="contacto__input">
+        <input type="email" name="email" placeholder="Tu email" required class="contacto__input">
+        <textarea name="message" placeholder="Tu mensaje" required class="contacto__textarea"></textarea>
+        <div>
+          <button type="submit" class="contacto__boton">Enviar</button>
+
+        </div>
       </form>
+     </section>
+    
     </section>
+    <section>
+      <footer class="footer">
+        <p class="footer__texto">Sebastian Macharette &copy; 2024</p>
+        <ul class="footer__redes">
+          <li><a href="https://github.com/sebastianjmacharette" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/seba-macha/" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:sebastian.macharette@gmail.com">Email</a></li>
+        </ul>
+      </footer>
+    </section>
+    
+    
   </body>
   <script src="script.js"></script>
 </html>
